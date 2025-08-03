@@ -45,13 +45,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de mi</a>
+              <a class="nav-link" href="#principal-section-1">Acerca de mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" href="#principal-section-2">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contact-section">Contacto</a>
             </li>
           </ul>
         </div>
@@ -72,16 +72,24 @@
             la comunidad.
           </p>
           <div class="mb-5 pb-5">
-            <button class="btn btn-lg btn-outline-info text-light me-4">
+            <button
+              class="btn btn-lg btn-outline-info text-light me-4"
+              onclick="location.href='#principal-section-2'"
+            >
               Trabajos
             </button>
-            <button class="btn btn-lg btn-info text-light">Contacto</button>
+            <button
+              class="btn btn-lg btn-info text-light"
+              onclick="location.href='#contact-section'"
+            >
+              Contacto
+            </button>
           </div>
         </div>
       </div>
     </header>
 
-    <section id="principal-section" class="container text-center my-5">
+    <section id="principal-section-1" class="container text-center my-5">
       <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
 
       <div class="row">
@@ -116,7 +124,7 @@
       </div>
     </section>
 
-    <section id="principal-section" class="my-5 p-5 bg-info">
+    <section id="principal-section-2" class="my-5 p-5 bg-info">
       <h2 class="display-4 fw-bold text-center text-light mb-3">
         Mis trabajos
       </h2>
@@ -223,7 +231,9 @@
         </div>
 
         <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Enviar</button>
+          <a data-toggle="tooltip" title="La función no está disponible">
+            <button class="btn btn-info text-light" disabled>Enviar</button>
+          </a>
         </div>
       </form>
     </section>

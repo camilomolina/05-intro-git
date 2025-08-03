@@ -20,7 +20,14 @@ a:hover {
   background-position: left;
 }
 
-#principal-section .image-top {
+#principal-section-1 .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#principal-section-2 .image-top {
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
